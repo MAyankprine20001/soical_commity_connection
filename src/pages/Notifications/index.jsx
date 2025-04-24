@@ -11,7 +11,7 @@ import {
 const Notifications = () => {
   const [filter, setFilter] = useState("all");
 
-  // Mock notifications data
+
   const allNotifications = [
     {
       id: 1,
@@ -79,7 +79,7 @@ const Notifications = () => {
     },
   ];
 
-  // Filter notifications based on selected filter
+ 
   const filteredNotifications =
     filter === "all"
       ? allNotifications
@@ -87,7 +87,7 @@ const Notifications = () => {
       ? allNotifications.filter((n) => !n.read)
       : allNotifications.filter((n) => n.type === filter);
 
-  // Get notification icon based on type
+
   const getNotificationIcon = (type) => {
     switch (type) {
       case "friend":
@@ -111,7 +111,7 @@ const Notifications = () => {
     <>
       <h2 className="text-2xl font-semibold text-white mb-6">Notifications</h2>
 
-      {/* Filters */}
+      
       <div className="flex flex-wrap gap-2 mb-6">
         <button
           className={`px-4 py-2 rounded-lg transition-colors ${
@@ -165,7 +165,7 @@ const Notifications = () => {
         </button>
       </div>
 
-      {/* Actions bar */}
+      
       <div className="flex justify-between items-center mb-4">
         <div className="text-indigo-300">
           {filteredNotifications.filter((n) => !n.read).length} unread
@@ -183,7 +183,7 @@ const Notifications = () => {
         </div>
       </div>
 
-      {/* Notifications list */}
+  
       <div className="space-y-3">
         {filteredNotifications.map((notification) => (
           <div

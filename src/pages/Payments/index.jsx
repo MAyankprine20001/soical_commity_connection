@@ -11,7 +11,7 @@ import {
 const Payments = () => {
   const [activeTab, setActiveTab] = useState("history");
 
-  // Mock payment methods
+  
   const paymentMethods = [
     {
       id: 1,
@@ -36,7 +36,7 @@ const Payments = () => {
     },
   ];
 
-  // Mock payment history
+  
   const paymentHistory = [
     {
       id: 101,
@@ -94,7 +94,7 @@ const Payments = () => {
     },
   ];
 
-  // Method icon component
+  
   const PaymentMethodIcon = ({ type, className = "text-xl" }) => {
     switch (type) {
       case "visa":
@@ -112,7 +112,7 @@ const Payments = () => {
     <>
       <h2 className="text-2xl font-semibold text-white mb-6">Payments</h2>
 
-      {/* Tabs */}
+    
       <div className="flex space-x-1 mb-6 bg-indigo-800 bg-opacity-40 p-1 rounded-lg inline-block">
         <button
           className={`px-4 py-2 rounded-lg transition-colors ${
@@ -146,7 +146,7 @@ const Payments = () => {
         </button>
       </div>
 
-      {/* Payment History Tab */}
+     
       {activeTab === "history" && (
         <div>
           <div className="flex justify-between items-center mb-6">
@@ -212,7 +212,7 @@ const Payments = () => {
         </div>
       )}
 
-      {/* Payment Methods Tab */}
+     
       {activeTab === "methods" && (
         <div>
           <div className="flex justify-between items-center mb-6">
@@ -269,7 +269,7 @@ const Payments = () => {
         </div>
       )}
 
-      {/* Subscription Tab */}
+   
       {activeTab === "subscription" && (
         <div>
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl border border-indigo-700 p-6">

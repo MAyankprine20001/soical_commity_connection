@@ -10,7 +10,7 @@ import {
 const Friends = () => {
   const [activeTab, setActiveTab] = useState("friends");
 
-  // Mock friends data
+  
   const friendsData = [
     {
       id: 1,
@@ -62,20 +62,20 @@ const Friends = () => {
     },
   ];
 
-  // Mock pending requests data
+  
   const pendingData = [
     { id: 101, name: "Alex Williams", avatar: "AW", mutualFriends: 3 },
     { id: 102, name: "Jessica Miller", avatar: "JM", mutualFriends: 1 },
   ];
 
-  // Mock suggested friends data
+  
   const suggestedData = [
     { id: 201, name: "Chris Morgan", avatar: "CM", mutualFriends: 5 },
     { id: 202, name: "Lisa Anderson", avatar: "LA", mutualFriends: 2 },
     { id: 203, name: "Ryan Thompson", avatar: "RT", mutualFriends: 4 },
   ];
 
-  // Friend Card component
+  
   const FriendCard = ({ friend }) => (
     <div className="bg-indigo-700 bg-opacity-40 rounded-lg border border-indigo-600 p-4">
       <div className="flex items-center justify-between">
@@ -138,7 +138,7 @@ const Friends = () => {
     <>
       <h2 className="text-2xl font-semibold text-white mb-6">Friends</h2>
 
-      {/* Tabs */}
+      
       <div className="flex space-x-1 mb-6 bg-indigo-800 bg-opacity-40 p-1 rounded-lg inline-block">
         <button
           className={`px-4 py-2 rounded-lg transition-colors ${
@@ -172,7 +172,7 @@ const Friends = () => {
         </button>
       </div>
 
-      {/* Search and filter */}
+  
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
         <div className="relative flex-grow">
           <RiSearch2Line className="absolute left-3 top-1/2 transform -translate-y-1/2 text-indigo-300" />

@@ -4,7 +4,7 @@ import UserLoginPage from "../pages/UserLogin";
 import AdminLoginPage from "../pages/AdminLogin";
 import Dashboard from "../pages/Dashboard";
 
-// User Routes
+// User Routes 
 import Profile from "../pages/Profile";
 import Messages from "../pages/Messages";
 import Friends from "../pages/Friends";
@@ -18,20 +18,20 @@ import UserManagement from "../pages/UserManagement";
 import Analytics from "../pages/Analytics";
 import AdminSettings from "../pages/Settings/admin";
 
-// Layout component to wrap dashboard pages
+
 import DashboardLayout from "../components/dashboard-layout";
 
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Public routes */}
+      
       <Route path="/" element={<UserLoginPage />} />
       <Route path="/admin" element={<AdminLoginPage />} />
 
-      {/* Dashboard routes */}
+      
       <Route path="/dashboard" element={<Dashboard />} />
 
-      {/* User Routes */}
+    
       <Route
         path="/profile"
         element={
@@ -89,7 +89,7 @@ const AppRoutes = () => {
         }
       />
 
-      {/* Admin Routes */}
+      
       <Route
         path="/user-management"
         element={

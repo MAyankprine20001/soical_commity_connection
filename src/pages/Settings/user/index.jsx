@@ -31,7 +31,7 @@ const Settings = () => {
       <h2 className="text-2xl font-semibold text-white mb-6">Settings</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Settings Navigation */}
+      
         <div className="md:col-span-1">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 border border-indigo-700">
             <ul className="space-y-2">
@@ -54,10 +54,10 @@ const Settings = () => {
           </div>
         </div>
 
-        {/* Settings Content */}
+       
         <div className="md:col-span-3">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-6 border border-indigo-700">
-            {/* Profile Settings */}
+          
             {activeSection === "profile" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -65,7 +65,7 @@ const Settings = () => {
                 </h3>
 
                 <div className="space-y-6">
-                  {/* Profile Picture */}
+               
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <div className="w-24 h-24 rounded-full bg-indigo-600 flex items-center justify-center text-white text-3xl font-bold">
                       JD
@@ -80,7 +80,7 @@ const Settings = () => {
                     </div>
                   </div>
 
-                  {/* Form Fields */}
+                 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-indigo-300 mb-2">
@@ -145,7 +145,7 @@ const Settings = () => {
               </div>
             )}
 
-            {/* Privacy Settings */}
+        
             {activeSection === "privacy" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -264,7 +264,7 @@ const Settings = () => {
               </div>
             )}
 
-            {/* Account Settings */}
+          
             {activeSection === "account" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -405,7 +405,7 @@ const Settings = () => {
               </div>
             )}
 
-            {/* Display other settings sections with placeholders */}
+           
             {["notifications", "appearance", "devices", "language"].includes(
               activeSection
             ) && (

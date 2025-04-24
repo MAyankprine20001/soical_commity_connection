@@ -36,7 +36,7 @@ const Dashboard = () => {
           animate="visible"
           className="flex flex-col h-full w-full"
         >
-          {/* Header - reduced padding and margins */}
+          
           <motion.div
             variants={itemVariants}
             className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 md:p-6 mb-3 border border-indigo-700"
@@ -86,9 +86,9 @@ const Dashboard = () => {
             </div>
           </motion.div>
 
-          {/* Main content area with sidebar */}
+        
           <div className="flex-grow flex flex-col lg:flex-row gap-3 overflow-hidden">
-            {/* Sidebar */}
+          
             <motion.div
               variants={itemVariants}
               className="lg:w-1/4 xl:w-1/5 flex-shrink-0 h-full"
@@ -96,7 +96,7 @@ const Dashboard = () => {
               <Sidebar viewType={viewType} />
             </motion.div>
 
-            {/* Main content - with overflow-auto for internal scrolling only */}
+            
             <motion.div variants={itemVariants} className="flex-grow h-full">
               <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 md:p-6 xl:p-8 border border-indigo-700 h-full overflow-auto">
                 <h2 className="text-xl md:text-2xl xl:text-3xl font-semibold text-white mb-4 md:mb-6 xl:mb-8">
@@ -182,7 +182,7 @@ const Dashboard = () => {
   );
 };
 
-// Helper components
+
 const StatCard = ({ title, value }) => (
   <div className="bg-indigo-700 bg-opacity-40 rounded-lg p-3 md:p-4 xl:p-6 border border-indigo-600">
     <p className="text-indigo-300 text-xs md:text-sm xl:text-base">{title}</p>

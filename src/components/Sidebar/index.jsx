@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Icons import (you'll need to install react-icons: npm install react-icons)
+
 import {
   RiDashboardLine,
   RiUser3Line,
@@ -21,7 +21,7 @@ import {
 const Sidebar = ({ viewType }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
-  // Define navigation items based on viewType
+  
   const navItems =
     viewType === "admin"
       ? [
@@ -61,7 +61,7 @@ const Sidebar = ({ viewType }) => {
     setIsCollapsed(!isCollapsed);
   };
 
-  // Animation variants
+  
   const sidebarVariants = {
     expanded: {
       width: "240px",

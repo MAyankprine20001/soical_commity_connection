@@ -153,12 +153,12 @@ const AdminLoginPage = () => {
   };
 
   return (
-    // Background container
+    
     <div className="h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 flex items-center justify-center p-4 overflow-hidden fixed inset-0">
-      {/* Fixed background gradient overlay - ensures full coverage */}
+      
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800" />
 
-      {/* Animated particles background */}
+  
       <div className="absolute inset-0 overflow-hidden">
         {particles.map((particle) => (
           <motion.div
@@ -193,7 +193,7 @@ const AdminLoginPage = () => {
         ))}
       </div>
 
-      {/* Content container with staggered animation - centered in the page */}
+      
       <div className="flex justify-center items-center w-full">
         <motion.div
           variants={containerVariants}
@@ -201,12 +201,12 @@ const AdminLoginPage = () => {
           animate="visible"
           className="w-full max-w-md relative z-10"
         >
-          {/* Main container with transparent background and blur effect */}
+          
           <motion.div
             className="w-full rounded-2xl overflow-hidden relative bg-purple-900 bg-opacity-30 backdrop-filter backdrop-blur-sm"
             variants={itemVariants}
           >
-            {/* Inner particles */}
+            
             <div className="absolute inset-0 overflow-hidden rounded-2xl">
               {particles.slice(0, 30).map((particle, idx) => (
                 <motion.div
@@ -243,7 +243,7 @@ const AdminLoginPage = () => {
 
             <div className="p-8 sm:p-12 relative z-10">
               <motion.div className="text-center" variants={itemVariants}>
-                {/* Logo and heading */}
+          
                 <motion.div
                   className="mx-auto w-20 h-20 mb-6 rounded-full bg-indigo-600 flex items-center justify-center"
                   animate={{ rotate: 360 }}
@@ -279,7 +279,7 @@ const AdminLoginPage = () => {
                   Enter your credentials to access the dashboard
                 </motion.p>
 
-                {/* Admin login form */}
+              
                 <form onSubmit={handleSubmit}>
                   {apiError && (
                     <div className="mb-4 p-3 bg-red-500 bg-opacity-20 border border-red-400 border-opacity-30 text-red-100 rounded-lg text-sm">
@@ -478,7 +478,7 @@ const AdminLoginPage = () => {
             </div>
           </motion.div>
 
-          {/* Link back to user login */}
+          
           <div className="mt-6 text-center">
             <a
               href="/"

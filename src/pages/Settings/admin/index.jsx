@@ -23,7 +23,7 @@ const AdminSettings = () => {
       <h2 className="text-2xl font-semibold text-white mb-6">Admin Settings</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Settings Navigation */}
+       
         <div className="md:col-span-1">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 border border-indigo-700">
             <ul className="space-y-2">
@@ -65,10 +65,10 @@ const AdminSettings = () => {
           </div>
         </div>
 
-        {/* Settings Content */}
+       
         <div className="md:col-span-3">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-6 border border-indigo-700">
-            {/* General Settings */}
+           
             {activeSection === "general" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -185,7 +185,7 @@ const AdminSettings = () => {
               </div>
             )}
 
-            {/* Security Settings */}
+          
             {activeSection === "security" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -305,7 +305,7 @@ const AdminSettings = () => {
               </div>
             )}
 
-            {/* Email Settings */}
+          
             {activeSection === "email" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">
@@ -406,7 +406,7 @@ const AdminSettings = () => {
               </div>
             )}
 
-            {/* API Settings */}
+           
             {activeSection === "api" && (
               <div>
                 <h3 className="text-xl font-medium text-white mb-6">

@@ -7,7 +7,7 @@ const Profile = () => {
       <h2 className="text-2xl font-semibold text-white mb-6">My Profile</h2>
 
       <div className="space-y-8">
-        {/* Profile Header */}
+      
         <div className="bg-indigo-700 bg-opacity-40 rounded-lg p-6 border border-indigo-600">
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-24 h-24 rounded-full bg-indigo-500 border-4 border-indigo-400 flex items-center justify-center mb-4 md:mb-0 md:mr-6">
@@ -31,7 +31,7 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Profile Stats */}
+     
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="bg-indigo-700 bg-opacity-40 rounded-lg p-4 border border-indigo-600">
             <p className="text-indigo-300 text-sm">Friends</p>
@@ -47,7 +47,7 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Bio Section */}
+       
         <div className="bg-indigo-700 bg-opacity-40 rounded-lg p-6 border border-indigo-600">
           <h4 className="text-xl font-semibold text-white mb-3">About Me</h4>
           <p className="text-indigo-200">
@@ -58,7 +58,7 @@ const Profile = () => {
           </p>
         </div>
 
-        {/* Recent Activity */}
+        
         <div>
           <h4 className="text-xl font-semibold text-white mb-4">
             Recent Activity

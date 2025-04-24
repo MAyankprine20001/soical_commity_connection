@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const UserLoginPage = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -9,6 +10,8 @@ const UserLoginPage = () => {
     width: typeof window !== "undefined" ? window.innerWidth : 1920,
     height: typeof window !== "undefined" ? window.innerHeight : 1080,
   });
+
+  const navigate = useNavigate("./dashboard")
 
 
   useEffect(() => {
@@ -65,7 +68,9 @@ const UserLoginPage = () => {
     setTimeout(() => {
       console.log("Redirecting to Discord login...");
       setIsLoading(false);
+      navigate("./dashboard")
     }, 1500);
+
   };
 
  

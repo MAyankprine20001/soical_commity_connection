@@ -4,7 +4,7 @@ import { RiDownload2Line, RiRefreshLine, RiCalendarLine } from "react-icons/ri";
 const Analytics = () => {
   const [timeframe, setTimeframe] = useState("week");
 
-  // Mock chart data
+
   const userStats = {
     totalUsers: 1254,
     activeUsers: 843,
@@ -37,7 +37,7 @@ const Analytics = () => {
         Analytics Dashboard
       </h2>
 
-      {/* Controls */}
+     
       <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-between">
         <div className="flex items-center">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow overflow-hidden flex">
@@ -100,7 +100,7 @@ const Analytics = () => {
         </div>
       </div>
 
-      {/* Stats Overview */}
+     
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-6 border border-indigo-700">
           <div className="flex justify-between items-start mb-4">
@@ -143,7 +143,7 @@ const Analytics = () => {
           </div>
 
           <div className="h-20 mt-6">
-            {/* This would be a chart - showing simplified representation */}
+            
             <div className="w-full h-full flex items-end">
               {userStats.userChart.map((value, index) => (
                 <div
@@ -192,7 +192,7 @@ const Analytics = () => {
           </div>
 
           <div className="h-20 mt-6">
-            {/* This would be a chart - showing simplified representation */}
+            
             <div className="w-full h-full flex items-end">
               {engagementStats.engagementChart.map((value, index) => (
                 <div
@@ -246,7 +246,7 @@ const Analytics = () => {
           </div>
 
           <div className="h-20 mt-6">
-            {/* This would be a chart - showing simplified representation */}
+            
             <div className="w-full h-full flex items-end">
               {contentStats.contentChart.map((value, index) => (
                 <div
@@ -264,7 +264,7 @@ const Analytics = () => {
         </div>
       </div>
 
-      {/* Detailed Analytics */}
+      
       <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-6 border border-indigo-700 mb-6">
         <h3 className="text-lg font-medium text-white mb-6">Traffic Sources</h3>
 
@@ -367,7 +367,7 @@ const Analytics = () => {
         </div>
       </div>
 
-      {/* Real-time Data */}
+      
       <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-6 border border-indigo-700">
         <div className="flex justify-between items-center mb-6">
           <div>

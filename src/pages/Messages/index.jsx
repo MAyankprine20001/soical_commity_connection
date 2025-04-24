@@ -9,7 +9,7 @@ import {
 const Messages = () => {
   const [activeChat, setActiveChat] = useState(1);
 
-  // Mock conversations data
+  
   const conversations = [
     {
       id: 1,
@@ -58,7 +58,7 @@ const Messages = () => {
     },
   ];
 
-  // Mock messages for the active conversation
+  
   const messages = [
     {
       id: 1,
@@ -97,7 +97,7 @@ const Messages = () => {
       <h2 className="text-2xl font-semibold text-white mb-6">Messages</h2>
 
       <div className="flex flex-col md:flex-row gap-4 h-[calc(70vh-2rem)]">
-        {/* Conversations List */}
+        
         <div className="md:w-1/3 bg-indigo-800 bg-opacity-40 rounded-lg border border-indigo-700 overflow-hidden flex flex-col">
           <div className="p-4 border-b border-indigo-700">
             <input
@@ -153,9 +153,9 @@ const Messages = () => {
           </div>
         </div>
 
-        {/* Active Chat */}
+        
         <div className="md:w-2/3 bg-indigo-800 bg-opacity-40 rounded-lg border border-indigo-700 flex flex-col">
-          {/* Chat Header */}
+      
           <div className="p-4 border-b border-indigo-700 flex justify-between items-center">
             <div className="flex items-center">
               <div className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-medium mr-3">
@@ -177,7 +177,7 @@ const Messages = () => {
             </button>
           </div>
 
-          {/* Messages */}
+        
           <div className="flex-grow p-4 overflow-y-auto space-y-4">
             {messages.map((message) => (
               <div
@@ -208,7 +208,6 @@ const Messages = () => {
             ))}
           </div>
 
-          {/* Message Input */}
           <div className="p-3 border-t border-indigo-700">
             <div className="flex items-center bg-indigo-700 bg-opacity-50 rounded-lg px-3 py-2">
               <button className="p-1 text-indigo-300 hover:text-white">

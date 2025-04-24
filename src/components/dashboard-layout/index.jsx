@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar";
 
 const DashboardLayout = ({ children }) => {
   const location = useLocation();
-  // Determine if we're in admin or user section based on the URL
+
   const [viewType, setViewType] = useState(() => {
     const adminPaths = ["/user-management", "/analytics", "/admin-settings"];
     return adminPaths.some((path) => location.pathname.startsWith(path))
@@ -13,7 +13,7 @@ const DashboardLayout = ({ children }) => {
       : "user";
   });
 
-  // Update viewType when location changes
+ 
   useEffect(() => {
     const adminPaths = ["/user-management", "/analytics", "/admin-settings"];
     const newViewType = adminPaths.some((path) =>
@@ -88,9 +88,9 @@ const DashboardLayout = ({ children }) => {
             </div>
           </motion.div>
 
-          {/* Main content area with sidebar */}
+          
           <div className="flex-grow flex flex-col lg:flex-row gap-3 overflow-hidden">
-            {/* Sidebar */}
+            
             <motion.div
               variants={itemVariants}
               className="lg:w-auto flex-shrink-0 h-full"
@@ -98,7 +98,7 @@ const DashboardLayout = ({ children }) => {
               <Sidebar viewType={viewType} />
             </motion.div>
 
-            {/* Main content */}
+       
             <motion.div variants={itemVariants} className="flex-grow h-full">
               <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 border border-indigo-700 h-full overflow-auto">
                 {children}

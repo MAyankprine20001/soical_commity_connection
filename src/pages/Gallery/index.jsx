@@ -12,7 +12,7 @@ const Gallery = () => {
   const [activeFolder, setActiveFolder] = useState("all");
   const [selectedItems, setSelectedItems] = useState([]);
 
-  // Mock folders data
+  
   const folders = [
     { id: "all", name: "All Items", count: 87 },
     { id: "recent", name: "Recent", count: 12 },
@@ -21,7 +21,7 @@ const Gallery = () => {
     { id: "artwork", name: "Artwork", count: 15 },
   ];
 
-  // Mock gallery items
+
   const galleryItems = [
     {
       id: 1,
@@ -121,7 +121,7 @@ const Gallery = () => {
     },
   ];
 
-  // Filter items based on active folder
+  
   const filteredItems =
     activeFolder === "all"
       ? galleryItems
@@ -139,7 +139,7 @@ const Gallery = () => {
     <>
       <h2 className="text-2xl font-semibold text-white mb-6">Gallery</h2>
 
-      {/* Gallery Actions */}
+  
       <div className="flex flex-col sm:flex-row gap-4 mb-6 justify-between">
         <div className="relative flex-grow max-w-md">
           <RiSearchLine className="absolute left-3 top-1/2 transform -translate-y-1/2 text-indigo-300" />
@@ -163,7 +163,7 @@ const Gallery = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Folders sidebar */}
+      
         <div className="md:w-1/4">
           <div className="bg-indigo-800 bg-opacity-40 backdrop-filter backdrop-blur-sm rounded-xl shadow-xl p-4 border border-indigo-700">
             <h3 className="text-lg font-medium text-white mb-4">Folders</h3>
@@ -204,9 +204,9 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Gallery Grid */}
+        
         <div className="md:w-3/4">
-          {/* Selected items actions */}
+      
           {selectedItems.length > 0 && (
             <div className="bg-indigo-700 mb-4 p-3 rounded-lg flex justify-between items-center">
               <span className="text-white">
@@ -226,7 +226,7 @@ const Gallery = () => {
             </div>
           )}
 
-          {/* Grid of items */}
+      
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredItems.map((item) => (
               <div
